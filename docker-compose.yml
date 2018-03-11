@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+  opensmtpd-mta:
+    image:
+      src386/docker-opensmtpd-mta:latest
+    build:
+      context: .
+    ports:
+      - "127.0.0.1:25:25"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+#     - ./certs/crt.pem:/etc/ssl/certs/crt.pem
+#     - ./certs/key.pem:/etc/ssl/private/key.pem
+#     If no SSL cert/key specified, a self-signed 10y valid one will be built
+    environment:
+      - MAILNAME=example.org
