@@ -71,6 +71,41 @@ List of environment variables:
 
 ## FAQ
 
+### How do I use docker-opensmtpd-mta with docker-pluxml ?
+
+Full docker-compose.yml example:
+
+   version: '3'
+   services:
+   
+     pluxml:
+       image:
+         src386/docker-pluxml:5.6
+       volumes:
+         - /etc/localtime:/etc/localtime:ro
+         - data:/var/www/html/data
+       ports:
+         - "80:80"
+       environment:
+         - PHP_SMTP_HOST=smtpd
+         - PHP_SMTP_PORT=25
+         - ENABLE_REMOTEIP=true
+       restart:
+         unless-stopped
+   
+     smtpd:
+       image:
+         src386/docker-opensmtpd-mta:latest
+       environment:
+           - MAILNAME=example.org
+       volumes:
+         - /etc/localtime:/etc/localtime:ro
+       restart:
+         unless-stopped
+   
+   volumes:
+     data:
+
 ## Licensing
 
 MIT.
