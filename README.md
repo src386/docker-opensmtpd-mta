@@ -87,13 +87,13 @@ Full docker-compose.yml example:
        ports:
          - "80:80"
        environment:
-         - PHP_SMTP_HOST=smtpd
+         - PHP_SMTP_HOST=mta
          - PHP_SMTP_PORT=25
          - ENABLE_REMOTEIP=true
        restart:
          unless-stopped
    
-     smtpd:
+     mta:
        image:
          src386/docker-opensmtpd-mta:latest
        environment:
@@ -103,8 +103,8 @@ Full docker-compose.yml example:
        restart:
          unless-stopped
    
-   volumes:
-     data:
+    volumes:
+      data:
 
 ## Licensing
 
