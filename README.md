@@ -4,7 +4,7 @@
 
 [![RSS commits][rss-commits]](https://github.com/src386/docker-opensmtpd-mta/commits/master.atom)
 
-[opensmtpd-logo]: https://raw.githubusercontent.com/src386/docker-pluxml/master/lib/images/opensmtpd-logo-small.png
+[opensmtpd-logo]: https://raw.githubusercontent.com/src386/docker-opensmtpd-mta/master/lib/images/opensmtpd-logo-small.png
 [rss-commits]: https://img.shields.io/badge/RSS-commits-orange.svg
 
 In a Docker environment, [OpenSMTPD][opensmtpd] is way more simple and lightweight than postfix, especially for MTA usage. Works great paired with docker-pluxml.
