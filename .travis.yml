@@ -9,7 +9,6 @@ language:
 before_install:
   - docker build -t src386/docker-opensmtpd-mta .
   - docker run --rm -d -e MAILNAME=example.org --name smtpd src386/docker-opensmtpd-mta
-  - wait 1
 
 script:
   - docker exec --rm -ti smtpd smtpctl show status
