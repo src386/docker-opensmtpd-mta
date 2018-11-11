@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+language:
+  - python
+
+before_install:
+  - docker build -t src386/docker-opensmtpd-mta .
+
+script:
+  - docker run --rm -ti -e MAILNAME=example.org src386/docker-opensmtpd-mta smtpd -h
