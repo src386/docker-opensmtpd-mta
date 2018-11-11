@@ -11,4 +11,4 @@ before_install:
   - docker run --rm -d -e MAILNAME=example.org --name smtpd src386/docker-opensmtpd-mta
 
 script:
-  - docker exec --rm -ti smtpd smtpctl show status
+  - docker exec -ti smtpd smtpctl show status
