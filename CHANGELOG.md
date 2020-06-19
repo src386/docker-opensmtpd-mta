@@ -8,3 +8,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - New `smtpd.conf` syntax
+- Added `127.0.0.1/8` in table sources for kubernetes (pluxml + smtpd in the same pod)
