@@ -23,4 +23,4 @@ COPY docker-entrypoint.sh /usr/local/bin/
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 
-CMD ["/usr/sbin/smtpd","-d"]
+CMD ["/usr/sbin/smtpd","-dv", "-T", "mta"]
