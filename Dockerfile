@@ -2,6 +2,9 @@
 #
 FROM alpine:latest
 
+# Debug: Edge repositories
+RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories
+
 # Install opensmtpd
 #
 RUN set -xe; \
