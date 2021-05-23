@@ -2,11 +2,9 @@
 
 *OpenSMTPD as a simple MTA to send emails*
 
-[![Travis CI][travis-ci]](https://travis-ci.org/src386/docker-opensmtpd-mta)
 [![RSS commits][rss-commits]](https://github.com/src386/docker-opensmtpd-mta/commits/master.atom)
 
 [opensmtpd-logo]: https://raw.githubusercontent.com/src386/docker-opensmtpd-mta/master/lib/images/opensmtpd-logo-small.png
-[travis-ci]: https://img.shields.io/travis/src386/docker-opensmtpd-mta.svg?style=flat
 [rss-commits]: https://img.shields.io/badge/RSS-commits-orange.svg
 
 In a Docker environment, [OpenSMTPD][opensmtpd] is way more simple and lightweight than postfix, especially for MTA usage. Works great paired with docker-pluxml.
