@@ -3,6 +3,7 @@
 *OpenSMTPD as a simple MTA to send emails*
 
 [![RSS commits][rss-commits]](https://github.com/src386/docker-opensmtpd-mta/commits/master.atom)
+[![build](https://github.com/src386/docker-opensmtpd-mta/actions/workflows/build-image.yaml/badge.svg)](https://github.com/src386/docker-opensmtpd-mta/actions/workflows/build-image.yaml)
 
 [opensmtpd-logo]: https://raw.githubusercontent.com/src386/docker-opensmtpd-mta/master/lib/images/opensmtpd-logo-small.png
 [rss-commits]: https://img.shields.io/badge/RSS-commits-orange.svg
